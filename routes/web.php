@@ -29,4 +29,4 @@ Route::get('/goalaccounts/{userid}', 'GoalAccountsController@GetGoalAccountsById
 Route::post('/login', 'OpenBankController@login');
 Route::get('/getBankAccounts/{bankName}', 'OpenBankController@getBankAccounts');
 Route::get('/getBalance/{bankName}', 'OpenBankController@getBalance');
-Route::get('{userID}/getBudget/{bankName}', 'OpenBankController@createBudget');
+Route::get('/{userID}/getBudget/{bankName}', 'OpenBankController@createBudget');
